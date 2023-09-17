@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">País</th>
+        <th scope="col">Población</th>
+        <th scope="col">Moneda</th>
+        <th scope="col">Url Google Maps</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let paises of pais">
+        <th scope="row">{{paises.name.common}}</th>
+        <td>{{paises.population}}</td>
+        <td>{{paises.currencies.name}}</td>
+        <td>{{paises.maps.googleMaps}}</td>
+      </tr>
+    </tbody>
+  </table>
