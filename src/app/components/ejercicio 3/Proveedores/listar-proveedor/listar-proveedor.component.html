@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<h1>Listar Proveedores</h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Proveedor</th>
+        <th scope="col">Dirección</th>
+        <th scope="col">Nit</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let proveedor of proveedores">
+        <th scope="row">{{proveedor.id}}</th>
+        <td>{{proveedor.razonSocial}}</td>
+        <td>{{proveedor.direccion}}</td>
+        <td>{{proveedor.nit}}</td>
+        <td>{{proveedor.estado}}</td>
+      </tr>
+    </tbody>
+  </table>
