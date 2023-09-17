@@ -22,7 +22,7 @@ export class ConsumirServiciosComponent implements OnInit {
         console.log(this.pais);
       },
       (error) => {
-        console.error('Error al obtener el inventario:', error);
+        console.error('Error al obtener el paises:', error);
       }
     );
   };  
