@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">País</th>
+        <th scope="col">Continente</th>
+        <th scope="col">Zona Horaria</th>
+        <th scope="col">Url Google Maps</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let paises of pais">
+        <th scope="row">{{paises.name.common}}</th>
+        <td>{{paises.region}}</td>
+        <td>{{paises.timezones}}</td>
+        <td>{{paises.maps.googleMaps}}</td>
+      </tr>
+    </tbody>
+  </table>

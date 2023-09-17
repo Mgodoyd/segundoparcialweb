@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsumirServiciosComponent } from './components/consumir-servicios/consumir-servicios.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ConsumirServiciosEjercicio2Component } from './components/consumir-servicios-ejercicio2/consumir-servicios-ejercicio2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConsumirServiciosComponent,
-    NavbarComponent
+    NavbarComponent,
+    ConsumirServiciosEjercicio2Component
   ],
   imports: [
     BrowserModule,
